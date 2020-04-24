@@ -1,0 +1,9 @@
+CREATE TABLE EMPLOYEES (
+    EMP_EMAIL VARCHAR2(100 BYTE) NOT NULL, 
+    EMP_NAME VARCHAR2(100 BYTE),
+    EMP_DEPT VARCHAR2(50 BYTE), 
+    CONSTRAINT PK_EMP PRIMARY KEY ( EMP_EMAIL )
+);
+
+insert into employees values ('scott@example.com','SCOTT','SALES');
+commit;
